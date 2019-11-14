@@ -37,7 +37,7 @@ public class Main {
         links.add(new Link(html.getId(), student2.getId(),links.size()));
 
         System.out.println("Welcome to Yusuf's School System!");
-        System.out.println("Would you like to login as a admin, faculty, or student?");
+        System.out.println("Would you like to login as a admin, faculty, or student(Only admin available on this version)?");
         String lc = k.nextLine();
         long id;
         boolean bool = false;
