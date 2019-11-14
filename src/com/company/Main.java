@@ -13,13 +13,15 @@ public class Main {
     public static Scanner k = new Scanner(System.in);
     private static ArrayList<Student> students = new ArrayList<>();
     private static ArrayList<Faculty> faculties = new ArrayList<>();
+    private static ArrayList<Admin> admins = new ArrayList<>();
     private static ArrayList<Course> courses = new ArrayList<>();
     private static ArrayList<Link> links = new ArrayList<>();
-    private static Admin admin = new Admin("Admin", 0);
     private static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 
     public static void main(String[] args) {
-
+        Admin admin = new Admin("Admin", 0);
+        Admin admin1 = new Admin("Admin1", 1);
+        Collections.addAll(admins, admin,admin1);
         Student student = new Student("Yusuf", 0);
         Student student1 = new Student("Tony", 1);
         Student student2 = new Student("Pierz", 2);
@@ -43,15 +45,15 @@ public class Main {
         boolean bool = false;
         do {
             if (lc.equalsIgnoreCase("admin")) {
-                System.out.println("Welcome Admin");
                 id = login(lc);
+                System.out.println("Welcome Admin " + id);
                 administrate();
             } else if (lc.equalsIgnoreCase("faculty")) {
-                System.out.println("Welcome Faculty");
                 id = login(lc);
+                System.out.println("Welcome Faculty " + id);
             } else if (lc.equalsIgnoreCase("student")) {
-                System.out.println("Welcome Student");
                 id = login(lc);
+                System.out.println("Welcome Student " + id);
             } else {
                 bool = true;
                 System.out.println("Invalid option");
@@ -200,8 +202,12 @@ public class Main {
             System.out.print("Password: ");
             String pass = k.nextLine();
             if (s.equalsIgnoreCase("admin")) {
-                if (email.equalsIgnoreCase(admin.getUserEmail()) && pass.equalsIgnoreCase(admin.getUserPassword())) {
-                    bool = false;
+                for(int i = 0 ; i < admins.size(); i++) {
+                    if (email.equalsIgnoreCase(admins.get(i).getUserEmail()) && pass.equalsIgnoreCase(admins.get(i).getUserPassword())) {
+                        bool = false;
+                        id = i;
+                        break;
+                    }
                 }
             }
             else if (s.equalsIgnoreCase("faculty")) {
