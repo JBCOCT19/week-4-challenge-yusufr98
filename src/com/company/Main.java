@@ -85,7 +85,7 @@ public class Main {
                 case 7: link("s"); break;
                 case 8: link("f"); break;
                 case 9: displayAll(); break;
-                case 0: bool = false;
+                case 0: bool = false; break;
                 default:
                     System.out.println("Invalid option");break;
             }

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a892a8e-abc9-4743-b984-fcb51294d681" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Week4ChallengeOOP/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Week4ChallengeOOP/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +25,7 @@
   <component name="ProjectId" id="1Tbuy6fEhjadFDWEDdKWAKDAvmM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -65,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573741367617</updated>
-      <workItem from="1573741377298" duration="13181000" />
+      <workItem from="1573741377298" duration="16227000" />
     </task>
     <servers />
   </component>
